@@ -24,6 +24,14 @@ const router = createBrowserRouter([
         path: '/',
         element: <HomePage />,
       },
+      {
+        path: '/tasks',
+        element: <HomePage />,
+      },
+      {
+        path: '/profile',
+        element: <HomePage />,
+      },
     ],
   },
 ]);

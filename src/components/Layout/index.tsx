@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
 import styles from './style.module.less';
+import Menu from '../Menu';
 
 interface Props {
   children?: ReactNode;
@@ -8,8 +9,11 @@ interface Props {
 const Layout = ({ children }: Props) => {
   return (
     <div className={styles.layout}>
-      <div>This is layout!</div>
-      <div>{children}</div>
+      <div>Good morning, suffle-girl</div>
+      <div className={styles.layoutItems}>
+        <Menu />
+        <div className={styles.layoutPages}>{children}</div>
+      </div>
     </div>
   );
 };
